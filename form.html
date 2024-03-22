@@ -1,1 +1,71 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  <title>form.html</title>
+<body>
+<li><a href="web design project.html"style="color:green">Home</a></li>
+<li><a href="cars.html"style="color:orange">About Us</a></li>
+<li><a href="tables.html"style="color:red">Products</a></li>
+<li><a href="form.html"style="color:yellow">Buy</a></li>
+  </ul>
+</nav>
+<style>
+body
+{
+background-image:url("cars/background 2.jpg");
+background-size: cover;
+background-repeat: no repeat;
+background-attachment: fixed;
+}
+</style>
+<div class="container">
+<h1>Fill In Our Form</h1>
+<form action="process_form.php" method="post">  <label for="name">Name:</label>
+<input type="text" id="name" name="name" placeholder="Enter your name">
+<br>
+<br>
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label><br>
+<input type="radio" id="other" name="gender" value="other">
+<label for="other">Other</label>
+<br>
+<br>
+<label for="email">Email ID:</label>
+<input type="email" id="email" name="email" placeholder="Enter your email">
+<br>
+<br>
+<label for="phone">Phone:</label>
+<input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+<br>
+<br>
+<form action="process_form.php" method="post">  <label for="car type">Car type:</label>
+<input type="text" id="name" name="Car type" placeholder="Enter Car type">
+<br>
+<br>
+<form action="process_form.php" method="post">  <label for="Car Price">Car Price:</label>
+<input type="text" id="name" name="name" placeholder="Enter Price of Car">
+<br>
+<br>
+<input type="checkbox" id="creditCard" name="payment[]" value="creditCard">
+<label for="creditCard">Credit Card</label><br>
+<input type="checkbox" id="debitCard" name="payment[]" value="debitCard">
+<label for="debitCard">Debit Card</label><br>
+<input type="checkbox" id="cashOnDelivery" name="payment[]" value="cashOnDelivery">
+<label for="cashOnDelivery">Cash on Delivery</label><br>
+<input type="checkbox" id="mpesa" name="payment[]" value="mpesa">
+<label for="mpesa">Mpesa</label><br>
+<input type="checkbox" id="paypal" name="payment[]" value="paypal">
+<label for="paypal">PayPal</label>
+<br>
+<br>
+<input type="submit" value="PURCHASE">
+</body>
+</form>
+<li><a href="javascript:history.back()">back to tables page.</a></li>
+<footer>
+<p>&copy; 2024 car sales website</p>
+</footer>
+</body>
+                            </html>
